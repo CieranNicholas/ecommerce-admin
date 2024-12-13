@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
 		return NextResponse.json(store);
 	} catch (error) {
-		console.error('[stores/POST]', error);
+		console.error('[STORES_POST]', error);
 		return new NextResponse('Internal Error', { status: 500 });
 	}
 }
